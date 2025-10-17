@@ -1,0 +1,29 @@
+On appelle l'image miroir d'un nombre, le nombre lu à l'envers. Par exemple, l'image miroir de 324 est 423.
+
+Un nombre est un palindrome s'il est égal à son image miroir. Par exemple, 52325, ou 6446 sont des palindromes.
+
+À partir d'un nombre de départ, nous pouvons l'ajouter à son image miroir, afin d'obtenir un nouveau nombre, 
+puis recommencer avec ce nouveau nombre jusqu'à obtenir un palindrome. À ce nombre de départ correspondent ainsi 2 valeurs : le palindrome obtenu,
+ ainsi que le nombre d'addition qu'il a fallu faire pour l'obtenir.
+
+Par exemple, pour le nombre de départ 475, nous obtenons :
+
+        475 + 574 = 1049
+        1049 + 9401 = 10450
+        10450 + 5401 = 15851
+        
+Le denier nombre, 15851, est un palindrome. Pour le nombre de départ 475, nous atteignons donc le palindrome 15851 en 3 étapes.
+
+Dans cet exercice, l'entrée est une séquence de 10 nombres. Vous devez répondre en donnant une séquence de 10 couples : 
+le palindrôme obtenu, et le nombre d'étapes.
+
+Vous avez l'assurance que pour tout nombre de départ proposé, vous atteindrez forcément un palindrôme en au plus 100 additions.
+
+Par exemple, si l'entrée est :
+
+        (844, 970, 395, 287)
+        
+Vous devrez envoyer en retour :
+
+        [[7337, 3] , [15851, 3] , [881188, 7] , [233332, 7]]
+        
